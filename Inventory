@@ -1,0 +1,24 @@
+-- Crear la tabla para el inventario
+CREATE TABLE inventory (
+    item_id INT PRIMARY KEY,
+    item_name VARCHAR(255) NOT NULL,
+    category VARCHAR(255),
+    stock INT CHECK (stock >= 0),
+    price DECIMAL(10, 2) CHECK (price >= 0),
+    description TEXT,
+    supplier VARCHAR(255)
+);
+
+-- Insertar datos de Sylvanian Families
+INSERT INTO inventory (item_id, item_name, category, stock, price, description, supplier)
+VALUES
+(001,'Red Roof Cosy Cottage Starter Home', 'Residencias', 10, 45.99, 'Una acogedora casa de inicio con techo rojo, perfecta para los nuevos coleccionistas. Incluye muebles básicos y una figura de conejo.', 'Proveedor A'),
+(002,'Set Amigas Pony', 'Sets de Figura y Mueble', 15, 25.50, 'Un set que incluye dos figuras de ponis con ropa intercambiable y accesorios para jugar.', 'Proveedor B'),
+(003,'Salón de Belleza de los Pony', 'Profesiones', 5, 30.00, 'Un salón de belleza completo con accesorios para estilizar a los ponis, incluyendo un tocador y herramientas de peluquería.', 'Proveedor C'),
+(004,'Set Estilista Pony Serafina', 'Profesiones', 8, 20.00, 'Incluye la figura de Serafina, una pony estilista, junto con su equipo de trabajo y accesorios de moda.', 'Proveedor A'),
+(005,'Set de Pascua Abuelos Conejo Chocolate', 'Sets de Figura y Mueble', 12, 18.75, 'Un set especial de Pascua que incluye a los abuelos Conejo Chocolate con trajes festivos y accesorios temáticos.', 'Proveedor B'),
+(006,'Casa del Árbol de la Familia Ardilla', 'Residencias', 6, 60.00, 'Una casa del árbol encantadora con múltiples niveles y áreas de juego, perfecta para la familia Ardilla.', 'Proveedor B'),
+(007,'Escuela del Bosque', 'Educación', 4, 50.00, 'Una escuela completa con aulas, escritorios, y accesorios educativos para los pequeños Ternurines.', 'Proveedor C'),
+(008,'Set de Picnic de la Familia Oso', 'Actividades al Aire Libre', 20, 15.00, 'Incluye a la familia Oso con una manta de picnic, comida y accesorios para un día de campo.', 'Proveedor A'),
+(009'Clínica Veterinaria', 'Profesiones', 3, 55.00, 'Una clínica veterinaria equipada con todo lo necesario para cuidar a los animales, incluyendo una figura de veterinario.', 'Proveedor B'),
+(010,'Set de Cumpleaños de la Familia Conejo', 'Celebraciones', 10, 22.00, 'Un set festivo que incluye a la familia Conejo con decoraciones de cumpleaños, pastel y regalos.', 'Proveedor C');
