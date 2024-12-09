@@ -1,0 +1,50 @@
+db.orders.insertMany([
+    {
+        "user_name": "Victor Jimenez",
+        "email": "victor_j@example.com",
+        "phone": "98564785216",
+        "items_id": [1],
+        "status": "completado",
+        "order_date": "23/11/2024"
+    },
+    {
+        "user_name": "Julio Mata",
+        "email": "juliomata@example.com",
+        "phone": "7985462816",
+        "items_id": [1, 2, 5],
+        "status": "pendiente",
+        "order_date": "23/11/2024"
+    },
+    {
+        "user_name": "Maureen Tellez",
+        "email": "mauTellez@example.com",
+        "phone": "1548757845",
+        "items_id": [2, 3],
+        "status": "pendiente",
+        "order_date": "24/11/2024"
+    },
+    {
+        "user_name": "Luis Maldonado",
+        "email": "maldonado@example.com",
+        "phone": "7845128956",
+        "items_id": [10],
+        "status": "completado",
+        "order_date": "24/11/2024"
+    },
+    {
+        "user_name": "Liz Lopez",
+        "email": "LLopez@example.com",
+        "phone": "7898512469",
+        "items_id": [6],
+        "status": "completado",
+        "order_date": "25/11/2024"
+    },
+    {
+        "user_name": "Diego Gonzales",
+        "email": "gonzDiego@example.com",
+        "phone": "7418529631",
+        "items_id": [1, 2, 3, 7, 8, 9],
+        "status": "pendiente",
+        "order_date": "25/11/2024"
+    }
+]);
