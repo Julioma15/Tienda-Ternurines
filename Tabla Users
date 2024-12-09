@@ -1,0 +1,10 @@
+ Crea la tabla users
+CREATE TABLE users (
+	user_id INT PRIMARY KEY,
+    user_name VARCHAR(50) NOT NULL,
+    password VARCHAR(50) NOT NULL,
+    permissions VARCHAR(50) NOT NULL
+);
+insert into users (user_id, user_name, password, permissions)
+values
+(001,'admin1', '1234', 'administraitor')
